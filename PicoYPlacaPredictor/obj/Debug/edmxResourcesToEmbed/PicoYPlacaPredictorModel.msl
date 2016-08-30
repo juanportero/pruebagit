@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PicoyPlacaPredictorModelStoreContainer" CdmEntityContainer="PicoyPlacaPredictorEntities">
+    <EntitySetMapping Name="DayOfWeek">
+      <EntityTypeMapping TypeName="PicoyPlacaPredictorModel.DayOfWeek">
+        <MappingFragment StoreEntitySet="DayOfWeek">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DayName" ColumnName="DayName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PicoYPlaca">
+      <EntityTypeMapping TypeName="PicoyPlacaPredictorModel.PicoYPlaca">
+        <MappingFragment StoreEntitySet="PicoYPlaca">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LicensePlateNumber" ColumnName="LicensePlateNumber" />
+          <ScalarProperty Name="IdDayOfWeek" ColumnName="IdDayOfWeek" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Schedule">
+      <EntityTypeMapping TypeName="PicoyPlacaPredictorModel.Schedule">
+        <MappingFragment StoreEntitySet="Schedule">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ScheduleName" ColumnName="ScheduleName" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

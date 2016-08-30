@@ -1,0 +1,16 @@
+D:\Projects\PicoYPlacaPredictor\PicoYPlacaPredictor\obj\Debug\PicoYPlacaPredictor.Form1.resources
+D:\Projects\PicoYPlacaPredictor\PicoYPlacaPredictor\obj\Debug\PicoYPlacaPredictor.Properties.Resources.resources
+D:\Projects\PicoYPlacaPredictor\PicoYPlacaPredictor\obj\Debug\PicoYPlacaPredictor.csproj.GenerateResource.Cache
+D:\Projects\PicoYPlacaPredictor\PicoYPlacaPredictor\bin\Debug\PicoYPlacaPredictor.exe.config
+D:\Projects\PicoYPlacaPredictor\PicoYPlacaPredictor\bin\Debug\PicoYPlacaPredictor.exe
+D:\Projects\PicoYPlacaPredictor\PicoYPlacaPredictor\bin\Debug\PicoYPlacaPredictor.pdb
+D:\Projects\PicoYPlacaPredictor\PicoYPlacaPredictor\bin\Debug\EntityFramework.dll
+D:\Projects\PicoYPlacaPredictor\PicoYPlacaPredictor\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\PicoYPlacaPredictor\PicoYPlacaPredictor\bin\Debug\EntityFramework.xml
+D:\Projects\PicoYPlacaPredictor\PicoYPlacaPredictor\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\PicoYPlacaPredictor\PicoYPlacaPredictor\obj\Debug\PicoYPlacaPredictor.exe
+D:\Projects\PicoYPlacaPredictor\PicoYPlacaPredictor\obj\Debug\PicoYPlacaPredictor.pdb
+D:\Projects\PicoYPlacaPredictor\PicoYPlacaPredictor\obj\Debug\PicoYPlacaPredictor.csprojResolveAssemblyReference.cache
+D:\PruebaGit\pruebagit\PicoYPlacaPredictor\bin\Debug\PicoYPlacaPredictor.exe.config
+D:\PruebaGit\pruebagit\PicoYPlacaPredictor\obj\Debug\PicoYPlacaPredictor.exe
+D:\PruebaGit\pruebagit\PicoYPlacaPredictor\obj\Debug\PicoYPlacaPredictor.pdb

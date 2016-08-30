@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PicoyPlacaPredictorModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DayOfWeek">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="DayName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PicoYPlaca" Relationship="Self.FK_PicoYPlaca_DayOfWeek" FromRole="DayOfWeek" ToRole="PicoYPlaca" />
+  </EntityType>
+  <EntityType Name="PicoYPlaca">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="LicensePlateNumber" Type="Int32" Nullable="false" />
+    <Property Name="IdDayOfWeek" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DayOfWeek" Relationship="Self.FK_PicoYPlaca_DayOfWeek" FromRole="PicoYPlaca" ToRole="DayOfWeek" />
+  </EntityType>
+  <EntityType Name="Schedule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ScheduleName" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="StartTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="EndTime" Type="Time" Nullable="false" Precision="7" />
+  </EntityType>
+  <Association Name="FK_PicoYPlaca_DayOfWeek">
+    <End Role="DayOfWeek" Type="Self.DayOfWeek" Multiplicity="1" />
+    <End Role="PicoYPlaca" Type="Self.PicoYPlaca" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DayOfWeek">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PicoYPlaca">
+        <PropertyRef Name="IdDayOfWeek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PicoyPlacaPredictorEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DayOfWeek" EntityType="Self.DayOfWeek" />
+    <EntitySet Name="PicoYPlaca" EntityType="Self.PicoYPlaca" />
+    <EntitySet Name="Schedule" EntityType="Self.Schedule" />
+    <AssociationSet Name="FK_PicoYPlaca_DayOfWeek" Association="Self.FK_PicoYPlaca_DayOfWeek">
+      <End Role="DayOfWeek" EntitySet="DayOfWeek" />
+      <End Role="PicoYPlaca" EntitySet="PicoYPlaca" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
